@@ -1,10 +1,8 @@
 # 🧁 Cooking Game
 
-A fun cooking and time-management game built with p5.js! Take orders from customers, make delicious cupcakes and drinks, and try to keep your customers happy!
+Cooking and time-management game built with p5.js. Take orders from customers, make cupcakes and drinks, and try to keep your customers happy.
 
-## Play the Game
-
-**[ Click here to play!](https://yanbmia.github.io/cooking-p5/)**
+**[ Play the game ](https://yanbmia.github.io/cooking-p5/)**
 
 ## About
 
