@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <script src="p5/p5.min.js"></script>
+    <script src="p5/p5.sound.min.js"></script>
+    <script src="sketchTemp.js"></script>
+    <!-- sketchTest implemented cupcake logic -->
+    <!-- you can only drag base when u did not dragged base -->
+    <!-- u can only drag frosting when you have base ready, and frosting not dragged -->
+    <link rel="stylesheet" href="https://use.typekit.net/ofw8ohs.css">
+    <style>
+      body{
+        background-image: url("images/htmlbkgd.jpg");
+        background-size:cover;
+        font-family: "matt-b", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      p{text-align:center;}
+      #game{margin:auto; width:900px; height:600px;}
+      h1{text-align:center;}
+      article{width:900px; margin:auto;}
+      p{margin-top:30px; color:rgb(74,74,74);}
+      b{color:#ce883d;}
+    </style>
+  </head>
+
+  <body>
+    <h1>Chef's Plaza</h1>
+    <div id="game">
+      <div id="p5_loading">
+        <img src="images/loading.gif" alt="loading">
+      </div>
+    </div>
+    <article>
+      <p>Welcome! As the <b>chef</b>, your goal is to quickly craft the perfect cupcakes and drinks to satisfy each customer before their patience runs out. <b>Drag and drop</b> ingredients to build tasty creations, match their orders accurately, and serve them <b>fast</b> to earn coins and keep everyone smiling. <br> Work efficiently, stay calm under pressure, and see how much you can earn in a day at Chef’s Plaza!</p>
+    </article>
+
+    <audio id="bgm" loop autoplay>
+    <source src="sounds/bgm.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+  <script>
+    const bgm = document.getElementById('bgm');
+    bgm.volume = 0.5;
+
+  // just in case autoplay is blocked (DOM queries)
+  document.addEventListener('click', () => {
+    bgm.play();
+  }, { 
+    once: true 
+    });
+</script> 
+
+  </body>
+</html>
+
